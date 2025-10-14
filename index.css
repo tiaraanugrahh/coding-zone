@@ -15,7 +15,6 @@
 
 .box1 { background-color: blueviolet; }
 .box2 { background-color: rgb(54, 54, 245); }
-.box3 { background-color: blueviolet; }
 
 .box:hover {
     transform: scale(1.05);
@@ -38,7 +37,7 @@
 }
 
 .link1, .link3 { background-color: aqua; }
-.link2, .link4 { background-color: rgb(241, 112, 235); }
+.link2{ background-color: rgb(241, 112, 235); }
 
 .link:hover {
   color: white;
@@ -90,14 +89,13 @@ body {
   top: 20px;
   left: 20px;
   display: flex;
-  align-items: center; /* biar tulisan sejajar vertikal sama logo */
-  gap: 15px; /* jarak antara logo dan tulisan */
-}
+  align-items: center; 
+  gap: 15px; 
 
 .logo {
-  width: 70px;
+  width: 60px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .logo-text {
