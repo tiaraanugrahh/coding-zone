@@ -1,0 +1,108 @@
+.container {
+    text-align: center;
+}
+
+.box {
+    display: block;
+    color: beige;
+    font-size: 60px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.box1 { background-color: blueviolet; }
+.box2 { background-color: rgb(54, 54, 245); }
+.box3 { background-color: blueviolet; }
+
+.box:hover {
+    transform: scale(1.05);
+    background-color: rgb(8, 15, 114);
+}
+
+.links {
+    margin-top: 40px;
+}
+
+.link {
+    color: black;
+    display: inline-block;
+    font-size: 40px;
+    padding: 20px 30px;
+    margin: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link1, .link3 { background-color: aqua; }
+.link2, .link4 { background-color: rgb(241, 112, 235); }
+
+.link:hover {
+  color: white;
+  transform: scale(1.1);
+  background-color: crimson;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.btn {
+   color: black;
+   display: inline-block;
+   font-size: 40px;
+   font-family: 'Times New Roman', Times, serif;
+   background-color: antiquewhite;
+   width: 250px;
+   height: 100px;
+   margin: 15px;
+   border: none;
+   border-radius: 20px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background-color: #ffefcf;
+    transform: translateY(-5px);
+}
+
+body {
+  background-image: url('image/bg1.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center; /* biar tulisan sejajar vertikal sama logo */
+  gap: 15px; /* jarak antara logo dan tulisan */
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
