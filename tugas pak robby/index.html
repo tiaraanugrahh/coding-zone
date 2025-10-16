@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Belajar JavaScript</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #79b8ff; 
+    margin: 0;
+    padding: 20px;
+    color: #f0eaff;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #d8b3ff;
+    text-shadow: 2px 2px 6px rgba(123, 50, 255, 0.7);
+  }
+
+  header p {
+    font-size: 1.2em;
+    color: #b3a2ff;
+  }
+
+  .back-button {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    background-color: rgba(123, 50, 255, 0.9);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .back-button:hover {
+    background-color: rgba(123, 50, 255, 1);
+  }
+
+  .content {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .lesson-box {
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    margin: 15px;
+    padding: 15px;
+    background: rgba(123, 50, 255, 0.85); /* ungu kuat */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(123, 50, 255, 0.7);
+    box-sizing: border-box;
+    overflow: scroll;
+    color: #ded1ff;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  .lesson-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(123, 50, 255, 0.9);
+  }
+
+  .lesson-box h2 {
+    margin-top: 0;
+    color: #debfff;
+  }
+
+  pre {
+    background: #5a3dbc;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.85em;
+    color: #e1d4ff;
+  }
+
+  
+  .lesson-box::-webkit-scrollbar {
+    width: 8px;
+  }
+  .lesson-box::-webkit-scrollbar-track {
+    background: rgba(123, 50, 255, 0.2);
+    border-radius: 10px;
+  }
+  .lesson-box::-webkit-scrollbar-thumb {
+    background: #b291ff;
+    border-radius: 10px;
+  }
+
+  button{
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #5a3dbc;
+    color: rgb(255, 253, 253);
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+</style>
+</head>
+<body>
+
+<button><a href="index2.html">kembali</a></button>
+
+<header>
+  <h1>Belajar JavaScript</h1>
+  <p></p>
+</header>
+
+<div class="content">
+  
+  <div class="lesson-box">
+    <h2>1. Variabel</h2>
+    <p>Variabel digunakan untuk menyimpan data. Deklarasi dengan <code>let</code> dan <code>const</code>.</p>
+    <pre><code>// Contoh
+let nama = "Budi";
+const umur = 25;
+console.log(nama, umur);</code></pre>
+  </div>
+
+  <div class="lesson-box">
+    <h2>2. Fungsi</h2>
+    <p>Fungsi adalah blok kode yang dapat dipanggil berkali-kali.</p>
+    <pre><code>// Contoh fungsi
+function sapa(user) {
+  alert("Halo, " + user + "!");
+}
+sapa("Andi");</code></pre>
+  </div>
+
+  <div class="lesson-box">
+    <h2>3. Pengkondisian</h2>
+    <p>Gunakan <code>if</code> untuk mengambil keputusan.</p>
+    <pre><code>// Contoh
+let nilai = 80;
+if (nilai >= 75) {
+  console.log("Lulus");
+} else {
+  console.log("Tidak Lulus");
+}</code></pre>
+  </div>
+
+  <div class="lesson-box">
+    <h2>4. Looping</h2>
+    <p>Loop <code>for</code> digunakan untuk mengulang.</p>
+    <pre><code>// Contoh
+for (let i=1; i<=10; i++) {
+  console.log(i);
+}</code></pre>
+  </div>
+
+  <div class="lesson-box">
+    <h2>5. Array</h2>
+    <p>Array digunakan untuk menyimpan banyak data.</p>
+    <pre><code>// Contoh array
+let angka = [1, 2, 3, 4, 5];
+console.log(angka[0]); // 1
+</code></pre>
+  </div>
+
+  <div class="lesson-box">
+    <h2>6. Object</h2>
+    <p>Object menyimpan data dalam bentuk key-value.</p>
+    <pre><code>// Contoh object
+let orang = {
+  nama: "Rina",
+  umur: 22,
+  hobi: ["membaca", "musik"]
+};
+console.log(orang.nama);
+</code></pre>
+  </div>
+
+  <div class="lesson-box">
+    <h2>7. Event</h2>
+    <p>Event digunakan untuk menangani aksi pengguna.</p>
+    <pre><code>// Contoh event
+<button onclick="alert('Klik sekali!')">Klik saya</button>
+</code></pre>
+  </div>
+
+  <div class="lesson-box">
+    <h2>8. Arti JavaScript dan Fungsinya</h2>
+    <p><[translate:JavaScript]> adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi interaktif dan dinamis.</p>
+    <p>Fungsi utama JavaScript adalah menambah fungsi dan efek pada elemen website, seperti validasi form, animasi, manipulasi DOM, dan komunikasi dengan server.</p>
+    <pre><code>// Contoh fungsi sederhana
+function halo() {
+  alert("Selamat datang di belajar JavaScript!");
+}
+halo();</code></pre>
+  </div>
+
+</div>
+
+</body>
+</html>
