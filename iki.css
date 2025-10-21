@@ -1,0 +1,123 @@
+/* Reset dan Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Figtree', sans-serif;
+  line-height: 1.6;
+  background: #f4f7fb;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Sections */
+.section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+.section code {
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Overflow Demo */
+.overflow-demo {
+  width: 300px;
+  height: 100px;
+  overflow: scroll;
+  background: #e0f7fa;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #00acc1;
+}
+
+/* Inline-block Demo */
+.demo-display {
+  margin: 15px 0;
+}
+.inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #5ec7f7;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+/* Width Demo */
+.width-demo {
+  width: 50%;
+  background: #b0f3b9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+/* Margin Box Model Demo */
+.box-model-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.box-model {
+  background: #f7d794;
+  padding: 20px;
+  margin: 15px;
+  flex: 1 1 30%;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Pre code */
+pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 40px;
+}

@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Belajar HTML Dasar</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edukasi CSS Interaktif</title>
+  <link rel="stylesheet" href="iki.css">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🔍 Edukasi CSS Interaktif</h1>
+      <p>Belajar tentang <strong>Overflow</strong>, <strong>Display</strong>, <strong>Dimensi</strong>, dan <strong>Box Model</strong></p>
+    </div>
+  </header>
 
-  <body>
-    <header>🌸 Belajar HTML Dasar 🌸</header>
+  <main class="container">
 
-    <nav>
-      <a href="#pengertian">Pengertian</a>
-      <a href="#fungsi">Fungsi</a>
-      <a href="#contoh">Contoh</a>
-    </nav>
-
-    <section class="materi" id="pengertian">
-      <div class="materi-box">
-        <h2>Pengertian HTML</h2>
-        <img
-          src="image/html.jpeg"
-          alt="materi html"
-          class="gambar-pengertian"
-        />
-        <p>
-          html (hypertext markup language) adalah bahasa standar yang digunakan
-          untuk membuat dan menyusun halaman web. html berfungsi untuk
-          menentukan struktur dan isi dari sebuah halaman, seperti teks, gambar,
-          tautan, tabel, hingga form. setiap elemen pada html ditulis dalam
-          bentuk tag yang berpasangan, seperti
-          <code>&lt;p&gt;</code> untuk paragraf dan
-          <code>&lt;h1&gt;</code> untuk judul.
-        </p>
-        <p>
-          seiring berkembangnya teknologi web, html kini sudah sampai versi 5
-          (html5) yang membawa banyak fitur baru seperti dukungan multimedia
-          (audio dan video), elemen semantik, dan peningkatan aksesibilitas.
-          html5 memudahkan pengembang untuk membuat halaman yang lebih
-          interaktif tanpa harus banyak bergantung pada plugin eksternal seperti
-          flash.
-        </p>
+    <!-- Overflow Section -->
+    <section class="section">
+      <h2>📜 Overflow: scroll</h2>
+      <p>Properti <code>overflow: scroll</code> membuat elemen bisa di-scroll jika kontennya melebihi ukuran elemen.</p>
+      <div class="demo-box overflow-demo">
+        <p>Ini adalah contoh konten yang sangat panjang. Ini adalah contoh konten yang sangat panjang. Ini adalah contoh konten yang sangat panjang. Ini adalah contoh konten yang sangat panjang. Ini adalah contoh konten yang sangat panjang. Ini adalah contoh konten yang sangat panjang. Ini adalah contoh konten yang sangat panjang.</p>
       </div>
+      <pre><code>.overflow-demo {
+  width: 300px;
+  height: 100px;
+  overflow: scroll;
+}</code></pre>
     </section>
 
-    <section id="fungsi">
-      <h2>Fungsi HTML</h2>
-      <ul>
-        <li>Membentuk struktur dasar halaman web.</li>
-        <li>Menghubungkan antarhalaman web melalui hyperlink</li>
-        <li>Menyediakan semantik pada struktur konten</li>
-        <li>
-          Menyematkan berbagai elemen seperti teks,gambar,video, dan tautan
-        </li>
-        <li>
-          Mendukung kerja sama dengan CSS dan JavaScript untuk tampilan dan
-          interaksi
-        </li>
-      </ul>
+    <!-- Display: inline-block Section -->
+    <section class="section">
+      <h2>📦 Display: inline-block</h2>
+      <p><code>display: inline-block</code> memungkinkan elemen berperilaku seperti inline tapi masih bisa memiliki dimensi (width/height).</p>
+      <div class="demo-display">
+        <div class="inline-block">Box 1</div>
+        <div class="inline-block">Box 2</div>
+        <div class="inline-block">Box 3</div>
+      </div>
+      <pre><code>.inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #5ec7f7;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin-right: 10px;
+}</code></pre>
     </section>
 
-    <section id="contoh">
-      <h2>Contoh Kode HTML</h2>
-      <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Contoh Halaman&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Halo Dunia!&lt;/h1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-      </pre>
-
-      <a href="https://codepen.io/pen/" target="_blank" class="btn"
-        >Coba Sendiri</a
-      >
-
-      <a href="" class="btn">Kembali</a>
+    <!-- Width (Dimensi) -->
+    <section class="section">
+      <h2>📏 Dimensi: Width</h2>
+      <p>Dengan <code>width</code>, kamu dapat mengatur lebar elemen sesuai keinginan.</p>
+      <div class="width-demo">Elemen ini lebarnya 50%</div>
+      <pre><code>.width-demo {
+  width: 50%;
+  background: #b0f3b9;
+  padding: 20px;
+  text-align: center;
+}</code></pre>
     </section>
 
-    <footer>© 2025 Belajar HTML bersama kamii 🌷</footer>
-  </body>
+    <!-- Box Model: Margin -->
+    <section class="section">
+      <h2>📐 Box Model: Margin</h2>
+      <p>Margin adalah ruang luar elemen yang memberi jarak antar elemen lain di sekitarnya.</p>
+      <div class="box-model-container">
+        <div class="box-model">Box 1</div>
+        <div class="box-model">Box 2</div>
+        <div class="box-model">Box 3</div>
+      </div>
+      <pre><code>.box-model {
+  background: #f7d794;
+  padding: 20px;
+  margin: 15px;
+}</code></pre>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Edukasi CSS Interaktif</p>
+  </footer>
+</body>
 </html>
